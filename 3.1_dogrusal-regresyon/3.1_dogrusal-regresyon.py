@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon Jul  6 18:50:13 2020
+Created on Fri Dec 10 14:40:01 2021
 
-@author: sadievrenseker
+@author: aysee
 """
 
 #1.kutuphaneler
@@ -52,7 +52,7 @@ from sklearn.linear_model import LinearRegression
 ile help ekranı gelecektir"""
 lr = LinearRegression()
 lr.fit(x_train, y_train)
-#X_train den Y_tarin i öğrenmesini istedik
+#x_train den y_tarin i öğrenmesini istedik
 
 tahmin = lr.predict(x_test)
 #burada X_testten öğrenip Y_testin karşılığını bulmaya çalışacak
@@ -70,12 +70,3 @@ plt.plot(x_test, lr.predict(x_test))
 plt.title("Aylara Göre Satış")
 plt.xlabel("Aylar")
 plt.ylabel("Satışlar")
-
-
-
-
-
-
-
-
-
